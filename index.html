@@ -1,20 +1,23 @@
- <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-  </head>
-  <body>
-    <div class=text>
-      <title> Color randomizer </title>
-      <h1> Color randomizer </h1>
-    </div>
-    
-    <div class="app">
-      <button onclick= redcubes()>
-        Random Color
-      </button>
-    </div>
-
-    <div id="box-container"></div>
-    <script src="randomizer.js"></script>
-  </body>
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body>
+      <div class=text>
+         <h1> Color randomizer </h1>
+      </div>
+      <div class="app">
+         <button class="button" onclick= redCubes()>
+         Random Color
+         </button>
+      </div>
+      <div id="box-container">
+         <div class="box" style= background-color:red>
+         </div>
+      </div>
+      <div class="hex">
+         <h1 id="hex"></h1>
+      </div>
+      <script src="randomizer.js"></script>
+   </body>
 </html>
