@@ -12,11 +12,12 @@ function redCubes() {
     }
     return color;
   }
-  var newColor = getRandomColor();
   newBox.style.backgroundColor = getRandomColor();
-}
+  var newColor = getRandomColor();
+  console.log(newColor);
+  var hex = document.querySelector("#hex");
+  hex.innerHTML = "Hex color value " + newColor;
 
-function removeElement() {
-  var emptyBox = document.getElementsByClassName("box");
-  emptyBox.removeChild(box);
+  var emptyBox = document.querySelector(".box");
+  emptyBox.parentNode.removeChild(emptyBox);
 }
