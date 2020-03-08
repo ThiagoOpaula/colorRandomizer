@@ -1,4 +1,4 @@
-function redcubes() {
+function redCubes() {
   var boxContainer = document.querySelector("#box-container");
   var newBox = document.createElement("div");
   newBox.className = "box";
@@ -14,4 +14,9 @@ function redcubes() {
   }
   var newColor = getRandomColor();
   newBox.style.backgroundColor = getRandomColor();
+}
+
+function removeElement() {
+  var emptyBox = document.getElementsByClassName("box");
+  emptyBox.removeChild(box);
 }
